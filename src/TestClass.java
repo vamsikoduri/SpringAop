@@ -3,6 +3,7 @@ public class TestClass {
 
 	public static void main(String Args[])
 	{
-		System.out.println("Welcome to Learning Spring AOP");
+	// Sample class 
+	System.out.println("Welcome to Learning Spring AOP");
 	}
 }
