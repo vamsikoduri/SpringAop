@@ -8,6 +8,7 @@
 
 
 
+	<aop:aspectj-autoproxy />
 	<bean id="circle" class="org.javabrains.model.Circle">
 		<property name="name" value="Circle Name"></property>
 	</bean>
@@ -16,8 +17,10 @@
 		<property name="name" value="Triangle Name"></property>
 	</bean>
 
+	<bean id="loggingAspect" class="org.javabrains.aspect.LoggingAspect" />
 
 	<bean id="shapeService" class="org.javabrains.service.ShapeService"
 		autowire="byName" />
+
 
 </beans>
