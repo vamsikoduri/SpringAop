@@ -1,5 +1,7 @@
 package org.javabrains.model;
 
+import org.javabrains.aspect.Loggable;
+
 public class Circle {
 
 	private String name;
@@ -8,10 +10,11 @@ public class Circle {
 		return name;
 	}
 
+	@Loggable
 	public void setName(String name) {
 		this.name = name;
 		System.out.println("value set for the property of the circle");
-		throw(new RuntimeException());
+		
 		
 	}
 	public String setAndReturnName(String name) {

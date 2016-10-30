@@ -68,7 +68,7 @@ public class LoggingAspect {
 	
 	
 
-	@Around("allGetters()")
+	@Around("@annotation(org.javabrains.aspect.Loggable)")
 	public Object myAroundAdvice(ProceedingJoinPoint joinPoint) {
 		Object returnValue = null;
 		
