@@ -10,7 +10,7 @@ public class Circle {
 		return name;
 	}
 
-	//@Loggable
+	@Loggable
 	public void setName(String name) {
 		this.name = name;
 		System.out.println("value set for the property of the circle");
