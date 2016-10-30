@@ -9,7 +9,7 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 
-@Aspect
+//@Aspect
 public class LoggingAspect {
 
 	/*@Before("allCircleMethods()")
@@ -55,9 +55,9 @@ public class LoggingAspect {
 
 	} */
 
-	@Pointcut("execution(* get*(..))")
+	/*@Pointcut("execution(* get*(..))")
 	public void allGetters() {
-	}
+	}*/
 	
 	/*@Pointcut("within(org.javabrains.model.Circle)")
 	public void allCircleMethods()
@@ -68,7 +68,7 @@ public class LoggingAspect {
 	
 	
 
-	@Around("@annotation(org.javabrains.aspect.Loggable)")
+	//@Around("@annotation(org.javabrains.aspect.Loggable)")
 	public Object myAroundAdvice(ProceedingJoinPoint joinPoint) {
 		Object returnValue = null;
 		
